@@ -1,0 +1,42 @@
+{
+  "name": "examfactory-omr",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc && vite build",
+    "preview": "vite preview --host",
+    "test": "vitest run",
+    "test:real": "tsx tests/real/run-real.ts",
+    "synth": "tsx tests/synthetic/make-samples.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@techstark/opencv-js": "^5.0.0-release.1",
+    "idb": "^8.0.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "@types/node": "^26.6.6",
+    "@types/pngjs": "^6.0.5",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^6.3.0",
+    "jpeg-js": "^0.4.4",
+    "pngjs": "^7.0.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.1"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true,
+    "@resvg/resvg-js@2.6.2": true
+  },
+  "private": true
+}

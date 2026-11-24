@@ -1,0 +1,9 @@
+node_modules/
+dist/
+tests/synthetic/out/
+tests/e2e/screenshots/
+tests/real/photos/
+tests/real/cases.json
+tests/real/report_*
+tests/real/errors_*
+*.log

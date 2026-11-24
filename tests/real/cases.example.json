@@ -1,0 +1,28 @@
+[
+  {
+    "image": "iphone13_normal_01.jpg",
+    "numQuestions": 20,
+    "expected": "ABCDABCDABCDABCDABCD",
+    "seat": 17,
+    "examCode": 4321,
+    "conditions": ["正常", "日光燈"],
+    "device": "iPhone 13 / Safari",
+    "notes": "桌面正上方拍攝"
+  },
+  {
+    "image": "android_tilt_02.jpg",
+    "numQuestions": 20,
+    "expected": "AB-DM?CDABCDABCDABCD",
+    "seat": 3,
+    "conditions": ["傾斜", "擦除", "複選"],
+    "device": "Pixel 7 / Chrome",
+    "notes": "第 5 題刻意複選；第 6 題擦得不乾淨，人工也無法確定，標 ?"
+  },
+  {
+    "image": "blurry_03.jpg",
+    "numQuestions": 20,
+    "expected": "ABCDABCDABCDABCDABCD",
+    "conditions": ["模糊"],
+    "expectReject": true
+  }
+]
