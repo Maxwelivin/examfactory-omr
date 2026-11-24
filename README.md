@@ -3,6 +3,8 @@
 用手機拍紙本答案卡，在瀏覽器本機以 OpenCV.js 辨識畫記、自動批改、記錄成績、匯出 CSV。
 不需要雲端、不需要付費 API；影像與成績只存在使用者的裝置。
 
+**線上版：https://maxwelivin.github.io/examfactory-omr/**（GitHub Pages，HTTPS；搜尋引擎不收錄）
+
 **目前進度：Phase 1（MVP）完成**。即時相機掃描是 Phase 2，PWA 離線是 Phase 3。詳見 `docs/KNOWN_LIMITATIONS.md`。
 
 ## 功能（Phase 1）
@@ -71,6 +73,13 @@ npm run preview      # 預覽建置結果
 2. 手機瀏覽器開這個網址（Windows 防火牆第一次可能詢問，請允許私人網路）。
 3. Phase 1 的「拍攝答案卡」使用系統相機（`<input capture>`），HTTP 也能用。
    Phase 2 的即時相機需要 HTTPS，屆時會加上自簽憑證或部署到 GitHub Pages。
+
+## 發布到 GitHub Pages
+
+```powershell
+git add -A; git commit -m "說明"; git push        # 原始碼 → main
+powershell -ExecutionPolicy Bypass -File scripts\deploy.ps1   # 測試＋建置 → gh-pages（約 1 分鐘後生效）
+```
 
 ## 實體答案卡測試方法
 
