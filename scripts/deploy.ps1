@@ -1,4 +1,4 @@
-# 建置並發布到 GitHub Pages（gh-pages 分支）
+﻿# 建置並發布到 GitHub Pages（gh-pages 分支）
 # 用法：在 omr 資料夾執行  powershell -ExecutionPolicy Bypass -File scripts\deploy.ps1
 $ErrorActionPreference = 'Stop'
 $env:Path = "C:\Program Files\nodejs;" + $env:Path
