@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#2457d6" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="OMR 閱卷" />
+    <title>ExamFactory OMR 離線閱卷</title>
+    <script>
+      // 先套主題，避免閃白
+      (function () {
+        var t = localStorage.getItem('omr.theme') || 'auto';
+        var d = t === 'dark' || (t === 'auto' && matchMedia('(prefers-color-scheme: dark)').matches);
+        document.documentElement.dataset.theme = d ? 'dark' : 'light';
+      })();
+    </script>
+    <script type="module" crossorigin src="./assets/index-LZNxMJIy.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CV9h1fFm.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
